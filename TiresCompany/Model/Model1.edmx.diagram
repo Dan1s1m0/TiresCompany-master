@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3819153e1fdc4310ad1d62df69c9d2c2" Name="Diagram1">
+        <EntityTypeShape EntityType="TiresCompanyModel.Agent" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="TiresCompanyModel.AgentPriorityHistory" Width="1.5" PointX="5.25" PointY="9.625" />
+        <EntityTypeShape EntityType="TiresCompanyModel.AgentType" Width="1.5" PointX="0.75" PointY="11.375" />
+        <EntityTypeShape EntityType="TiresCompanyModel.Material" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="TiresCompanyModel.MaterialCountHistory" Width="1.5" PointX="5.25" PointY="15.375" />
+        <EntityTypeShape EntityType="TiresCompanyModel.MaterialType" Width="1.5" PointX="0.75" PointY="4.125" />
+        <EntityTypeShape EntityType="TiresCompanyModel.Product" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="TiresCompanyModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="12.5" />
+        <EntityTypeShape EntityType="TiresCompanyModel.ProductMaterial" Width="1.5" PointX="5.25" PointY="6.625" />
+        <EntityTypeShape EntityType="TiresCompanyModel.ProductSale" Width="1.5" PointX="5.25" PointY="3.375" />
+        <EntityTypeShape EntityType="TiresCompanyModel.ProductType" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="TiresCompanyModel.Shop" Width="1.5" PointX="5.25" PointY="21.875" />
+        <EntityTypeShape EntityType="TiresCompanyModel.Supplier" Width="1.5" PointX="5.25" PointY="18.125" />
+        <AssociationConnector Association="TiresCompanyModel.FK_Agent_AgentType" />
+        <AssociationConnector Association="TiresCompanyModel.FK_AgentPriorityHistory_Agent" />
+        <AssociationConnector Association="TiresCompanyModel.FK_ProductSale_Agent" />
+        <AssociationConnector Association="TiresCompanyModel.FK_Shop_Agent" />
+        <AssociationConnector Association="TiresCompanyModel.FK_Material_MaterialType" />
+        <AssociationConnector Association="TiresCompanyModel.FK_MaterialCountHistory_Material" />
+        <AssociationConnector Association="TiresCompanyModel.FK_ProductMaterial_Material" />
+        <AssociationConnector Association="TiresCompanyModel.FK_Product_ProductType" />
+        <AssociationConnector Association="TiresCompanyModel.FK_ProductCostHistory_Product" />
+        <AssociationConnector Association="TiresCompanyModel.FK_ProductMaterial_Product" />
+        <AssociationConnector Association="TiresCompanyModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="TiresCompanyModel.MaterialSupplier" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,42 @@
+﻿<Page x:Class="TiresCompany.View.UpdateProductPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TiresCompany.View"
+        mc:Ignorable="d"
+        Title="Страница товара" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Нaзвание товара "/>
+                <TextBox x:Name="TitleTextBox" Text="{Binding Title}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Тип товара "/>
+                <ComboBox DisplayMemberPath="Title" SelectedValuePath="ID" x:Name="TypeComboBox" Text="{Binding  ProductType.Title}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Артикул товара "/>
+                <TextBox x:Name="ArticleTextBox" Text="{Binding ArticleNumber}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Фото товара "/>
+                <Image Source="{Binding ImagePath}" x:Name="ProductImage"/>
+                <Button x:Name="ChangeImageButton" 
+                        Click="ChangeImageButtonClick" 
+                        Content="Добавить изображение"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <Button x:Name="Cохранить" 
+                        Click="ImageButtonClick" 
+                        Content="Cохранить"/>
+        </StackPanel>
+    </Grid>
+</Page>
